@@ -31,6 +31,7 @@ function myFunction(json){
     }
     else{
         for(var s=0; s<$('#numberOfSongs').val(); s++){
+            html += "<tr><td>" + num + "</td>";
             html += "<tr><td><img src =" + json.results[s].artworkUrl60 + "></td>";
             html += "<td>" + json.results[s].trackName + "</td>";
             html += "<td>" + "<audio controls='true' src='" + json.results[s].previewUrl + "' id='audio' type='audio/m4a'></audio>" + "</td></tr>";
