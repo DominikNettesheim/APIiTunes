@@ -36,6 +36,7 @@ function myFunction(json){
             html += "<tr><td><img src =" + json.results[s].artworkUrl60 + "></td>";
             html += "<td>" + json.results[s].trackName + "</td>";
             html += "<td>" + "<audio controls='true' src='" + json.results[s].previewUrl + "' id='audio' type='audio/m4a'></audio>" + "</td></tr>";
+            num ++;
         }
         document.getElementById("songResults").innerHTML = html;
     }
