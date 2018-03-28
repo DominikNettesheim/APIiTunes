@@ -26,6 +26,7 @@ $(document).ready(function(){
 function myFunction(json){
     var html = "";
     var artist = $('#selectArtist').val();
+    var num = 1;
     if(artist == 0){
         document.getElementById("songResults").innerHTML = "PLEASE SELECT AN ARTIST!";
     }
